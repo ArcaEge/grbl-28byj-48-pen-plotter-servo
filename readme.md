@@ -1,6 +1,6 @@
 # GRBL servo pen plotter with 28byj-48 unipolar motors
 
-*This is standard [GRBL](https://github.com/gnea/grbl) modified for use with a 28-byj-48 motor and a pen plotter that has a hobby servo for the pen up / down / pen change.*
+*This is standard [GRBL](https://github.com/gnea/grbl) modified for use with a 28-byj-48 motor and a pen plotter that has a servo for the pen up / down / pen change.*
 
 The servo will have 3 positions representing up, down and pen change (optional). You use normal gcode. Any time the work Z is above 0 the servo will move to the pen up position. If it is at Z 0 or below it will be in the pen down position. **New**: If Z is at or below -1.9 (can be changed, the default is same as the GRBL Plotter pen down defaults) the servo will move to the pen change position. See below for details.
 
